@@ -10,20 +10,40 @@
 </head>
 
 <body>
-  <div class="" id="start-menu">
-    <form class="start-form" id="nameForm">
-      <label for="">Player 1:</label><br/>
-      <input type="text" name="" value="" id="playerOneName"><br/>
-      <label for="">Player 2:</label><br/>
-      <input type="text" name="" value="" id="playerTwoName"><br/>
-      <button type="submit" name="button">Start</button>
-    </form>
+  <div class="container-fluid">
+    <div class="" id="start-menu">
+      <form class="start-form" id="nameForm">
+        <label for="">Player 1:</label><br/>
+        <input type="text" name="" value="" id="playerOneName"><br/>
+        <label for="">Player 2:</label><br/>
+        <input type="text" name="" value="" id="playerTwoName"><br/>
+        <button class="btn btn-primary" type="submit" name="button" id="startBtn">Start</button>
+      </form>
 
-  </div>
-  <div class="" id="player-section">
-    <p>player section ni hapa</p>
-  </div>
+    </div>
+    <div class="" id="player-section">
+      <button class="btn btn-primary" type="" name="" id="new-game">New-Game</button>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="page-header">Player 1:<span id="playerOneShow"></span></h4>
+          <button class="btn btn-primary" type="" name="" id="playerOneRollBtn">Roll</button>
+          <button class="btn btn-primary" type="button" name="button">Hold</button>
+          <h2>Roll:  <span id="playerOneRoll"></span></h2>
+          <h4>Round score:<span></span></h4>
+          <h4>Total Score:<span></span></h4>
 
+        </div>
+        <div class="col-md-6">
+          <h4 class="page-header">Player 1:<span id="playerTwoShow"></span></h4>
+          <button class="btn btn-primary" type="button" name="button" id="playerTwoRollBtn">Roll</button>
+          <button class="btn btn-primary" type="button" name="button">Hold</button>
+          <h2>Roll:  <span id="playerTwoRoll"></span></h2>
+          <h4>Round score:<span></span></h4>
+          <h4>Total Score:<span></span></h4>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
